@@ -1,0 +1,43 @@
+.main {
+    display: flex;
+    position: relative;
+    margin-bottom: 60px;
+
+    &__background {
+        position: absolute;
+        aspect-ratio: 428/533;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #ccc;
+    }
+
+    &__container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding-top: 358px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    &__title {
+        margin-bottom: 16px;
+        font-size: 72px;
+        font-weight: bold;
+    }
+
+    &__subtitle {
+        margin-bottom: 16px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    &__description {
+        margin-bottom: 32px;
+    }
+
+    &__action {
+        height: 64px;
+    }
+}

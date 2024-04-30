@@ -1,0 +1,41 @@
+.header {
+    position: absolute;
+    top: 0;
+    display: flex;
+    z-index: 1;
+    width: 100%;
+    margin-top: 16px;
+    min-height: 64px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background-color: rgba(#000000, 0.5);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+
+    &__logo {
+        width: 60px;
+        height: 30px;
+        background: #999;
+    }
+
+    &__nav {
+        display: none;
+    }
+
+    &__addition {
+        display: flex;
+        align-items: center;
+    }
+
+    &__questions {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        margin-right: 16px;
+        border: none;
+    }
+}

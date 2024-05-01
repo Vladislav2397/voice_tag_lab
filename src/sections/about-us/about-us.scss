@@ -9,7 +9,7 @@
     }
 
     &__container {
-        background-color: #cccccc;
+        background: linear-gradient(3deg, rgba(#0958FA, 0.05) -50%, rgba(#09FA32, 0.05) 150%);
         border-radius: 30px;
         padding: 24px;
     }
@@ -21,11 +21,17 @@
     }
 
     &__image {
-        width: 340px;
+        display: block;
+        overflow: hidden;
+        min-width: 340px;
         height: 131px;
         margin-bottom: 10px;
         border-radius: 20px;
         background-color: #999;
+
+        img {
+            max-width: 100%;
+        }
     }
 
     &__title {
@@ -36,5 +42,6 @@
 
     &__description {
         font-size: 14px;
+        color: rgba(#fff, 0.8);
     }
 }

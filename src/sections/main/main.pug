@@ -1,7 +1,20 @@
+include ../../components/button/button.pug
+
 .main
-    img.main__background
+    picture.main__background
+        source(
+            srcset="public/assets/images/banner-mobile.png"
+            media="(max-width: 649px)"
+        )
+        source(
+            srcset="public/assets/images/banner.png"
+            media="(min-width: 650px)"
+        )
+        img(
+            src="public/assets/images/banner-mobile.png"
+        )
     .main__container.container
-        h1.main__title Voice Tag Lab
+        h1.main__title Voice<br />Tag Lab
         h4.main__subtitle The best custom voice tags online
         p.main__description Voice Tag is a necessity for every music producer. We offer a wide range of voices and professional service. Brand your sound with us! Become known
-        button.main__action Get your custom tag
+        +buttonGradientBackground.main__action Get your custom tag

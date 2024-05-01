@@ -38,13 +38,31 @@
         height: 118px;
         margin-right: 8px;
         flex-shrink: 0;
+        font-size: 90px;
+        font-weight: bold;
     }
 
     &__attention {
+        position: relative;
         padding: 16px 43px;
-        background-color: #ccc;
+        background-color: rgba(#fff, 0.04);
         border-radius: 20px;
         font-size: 16px;
         text-align: center;
+    }
+
+    &__punctuation {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 37px;
+        padding-left: 16px;
+        padding-right: 16px;
+        box-sizing: border-box;
+        font-weight: bold;
     }
 }

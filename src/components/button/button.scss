@@ -1,0 +1,13 @@
+.button {
+    border: none;
+    line-height: 64px;
+    border-radius: 30px;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+
+    &--gradient-background {
+        background: linear-gradient(41deg, #0958FA 0%, #09FA32 100%);
+    }
+}

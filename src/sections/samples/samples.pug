@@ -1,13 +1,13 @@
 .samples
     .container.samples__container
-        .samples__header Tags Samples
+        +theText('h2', 'h2').samples__header Tags Samples
         .samples__list
             .samples__item
                 picture.samples__background
                     img(
                         src="public/assets/images/samples/background-male.png"
                     )
-                .samples__title Male voice
+                +theText('h5', 'large').samples__title Male voice
                 .samples__audio
                 .samples__audio
             .samples__item
@@ -15,7 +15,7 @@
                     img(
                         src="public/assets/images/samples/background-female.png"
                     )
-                .samples__title Female voice
+                +theText('h5', 'large').samples__title Female voice
                 .samples__audio
                 .samples__audio
             .samples__item
@@ -23,12 +23,12 @@
                     img(
                         src="public/assets/images/samples/background-anime.png"
                     )
-                .samples__title Anime voice
+                +theText('h5', 'large').samples__title Anime voice
                 .samples__audio
             .samples__item
                 picture.samples__background
                     img(
                         src="public/assets/images/samples/background-kid.png"
                     )
-                .samples__title Kid voice
+                +theText('h5', 'large').samples__title Kid voice
                 .samples__audio

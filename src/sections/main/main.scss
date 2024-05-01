@@ -20,21 +20,21 @@
         position: relative;
         display: flex;
         flex-direction: column;
-        padding-top: 358px;
+        padding-top: 370px;
         padding-left: 20px;
         padding-right: 20px;
     }
 
     &__title {
         margin-bottom: 16px;
-        font-size: 72px;
+        font-size: 80px;
         font-weight: bold;
+        line-height: 110%;
+        font-family: 'ArchivoBlack';
     }
 
     &__subtitle {
         margin-bottom: 16px;
-        font-size: 18px;
-        font-weight: bold;
     }
 
     &__description {

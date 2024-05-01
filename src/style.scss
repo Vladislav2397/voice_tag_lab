@@ -8,3 +8,35 @@ body {
     background: #10141E;
     color: #ffffff;
 }
+
+//@mixin font($family, $path, $size, $weight) {
+//    @font-face {
+//        font-family: $family;
+//    }
+//}
+
+@font-face {
+    font-family: 'RussoOne';
+    src:
+        url('/public/assets/fonts/Russo_One/RussoOne-Regular.ttf') format('truetype'),
+        url('/public/assets/fonts/Russo_One/RussoOne-Regular.woff') format('woff'),
+        url('/public/assets/fonts/Russo_One/RussoOne-Regular.woff2') format('woff2');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'ArchivoBlack';
+    src:
+        url('/public/assets/fonts/ArchivoBlack/ArchivoBlack-Regular.ttf') format('truetype');
+        //url('/public/assets/fonts/ArchivoBlack/ArchivoBlack-Regular.ttf') format('woff'),
+        //url('/public/assets/fonts/ArchivoBlack/ArchivoBlack-Regular.woff2') format('woff2');
+    font-weight: bold;
+}
+
+//@font-face {
+//    font-family: 'Montserrat';
+//    src:
+//        url('/public/assets/fonts/Russo_One/RussoOne-Regular.ttf') format('truetype'),
+//        url('/public/assets/fonts/Russo_One/RussoOne-Regular.woff') format('woff'),
+//        url('/public/assets/fonts/Russo_One/RussoOne-Regular.woff2') format('woff2');
+//}

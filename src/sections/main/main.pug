@@ -15,6 +15,6 @@ include ../../components/button/button.pug
         )
     .main__container.container
         h1.main__title Voice<br />Tag Lab
-        h4.main__subtitle The best custom voice tags online
-        p.main__description Voice Tag is a necessity for every music producer. We offer a wide range of voices and professional service. Brand your sound with us! Become known
+        +theText('h4', 'large').main__subtitle The best custom voice tags online
+        +theText('p', 'small').main__description Voice Tag is a necessity for every music producer. We offer a wide range of voices and professional service. Brand your sound with us! Become known
         +buttonGradientBackground.main__action Get your custom tag

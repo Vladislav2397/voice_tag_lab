@@ -1,0 +1,11 @@
+mixin review(avatarSrc, text, isReverse)
+    .review()&attributes(attributes)
+        if !isReverse
+            picture.review__avatar
+                img(
+                    src= avatarSrc
+                )
+        p.review__text= text
+        if isReverse
+            picture.review__avatar
+                img

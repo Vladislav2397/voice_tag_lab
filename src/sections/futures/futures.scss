@@ -1,0 +1,56 @@
+.futures {
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+
+    &__container {
+        padding: 24px;
+        box-sizing: border-box;
+        background: linear-gradient(7deg, rgba(#0958FA, 0.05) -30%, rgba(#09FA32, 0.05) 130%);
+        border-radius: 30px;
+    }
+
+    &__header {
+        margin-bottom: 16px;
+        line-height: 140%;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    &__list {
+        margin-right: -16px;
+        margin-bottom: -16px;
+    }
+
+    &__item {
+        position: relative;
+        padding-left: 14px;
+        margin-right: 16px;
+        margin-bottom: 16px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 7px;
+            left: 0;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #0958FA;
+        }
+    }
+
+    &__title {
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 140%;
+    }
+
+    &__description {
+        font-size: 14px;
+        line-height: 140%;
+        color: rgba(#fff, 0.8);
+        font-weight: lighter;
+    }
+}

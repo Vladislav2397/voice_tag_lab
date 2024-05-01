@@ -1,0 +1,22 @@
+.offer {
+    background-color: rgba(#000, 0.4);
+    border-radius: 30px;
+    padding: 24px;
+    box-sizing: border-box;
+
+    &__title {
+        margin-bottom: 8px;
+        font-size: 24px;
+        line-height: 140%;
+    }
+
+    &__list {
+        margin-bottom: 20px;
+    }
+
+    &__item {
+        font-size: 16px;
+        line-height: 140%;
+        font-weight: lighter;
+    }
+}

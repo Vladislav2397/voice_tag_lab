@@ -5,6 +5,8 @@ import './style.scss'
 import './components/button/button.scss'
 import './components/review/review.scss'
 import './components/the-text/the-text.scss'
+import './components/logo/logo.scss'
+import './components/audio-track/audio-track.scss'
 
 // Sections
 import './sections/header/header.scss'

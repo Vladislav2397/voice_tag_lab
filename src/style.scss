@@ -9,6 +9,12 @@ body {
     color: #ffffff;
 }
 
+button {
+    cursor: pointer;
+    border: none;
+    padding: 0;
+}
+
 //@mixin font($family, $path, $size, $weight) {
 //    @font-face {
 //        font-family: $family;

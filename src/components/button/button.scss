@@ -8,11 +8,17 @@
     cursor: pointer;
 
     &--gradient-background {
-        background: linear-gradient(41deg, #0958FA 0%, #09FA32 100%);
+        background: linear-gradient(12deg, #0958FA 0%, #09FA32 100%);
     }
 
     &--gradient-border-outline {
-        background: linear-gradient(41deg, #0958FA 0%, #09FA32 100%);
+        background: linear-gradient(12deg, #0958FA 0%, #09FA32 100%);
+        position: relative;
+
+        p {
+            position: relative;
+            z-index: 1;
+        }
 
         &::before {
             content: '';

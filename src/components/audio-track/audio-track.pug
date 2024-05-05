@@ -1,0 +1,19 @@
+mixin audioTrack(trackId)
+    .audio-track&attributes(attributes)
+        button.audio-track__button(
+            id= `${trackId}-button`
+        )
+            img.audio-track__play(
+                src="public/assets/images/icons/play.svg"
+            )
+            img.audio-track__pause(
+                src="public/assets/images/icons/pause.svg"
+            )
+        .audio-track__bar(
+            id= `${trackId}-bar`
+        )
+        //.audio-track__bar
+        //    each i in [10, 12, 16, 16, 20, 26, 28, 24, 18, 14, 10, 10, 12, 16, 20, 14, 10, 26, 24, 10, 16, 10, 12, 16, 18, 24, 30, 26, 24, 10, 16, 10, 12, 16, 18, 24, 30, 26, 24, 10, 16, 24, 30, 26, 24, 10, 16]
+        //        .audio-track__stick(
+        //            class= `audio-track__stick--${i}`
+        //        )

@@ -1,7 +1,6 @@
 .main {
     display: flex;
     position: relative;
-    margin-bottom: 60px;
     color: #fff;
 
     &__background {
@@ -17,10 +16,15 @@
     }
 
     &__container {
+        max-width: 1050px;
+        margin: 0 auto;
+        padding-top: 370px;
+    }
+
+    &__wrapper {
         position: relative;
         display: flex;
         flex-direction: column;
-        padding-top: 370px;
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -35,6 +39,13 @@
 
     &__subtitle {
         margin-bottom: 16px;
+
+        &--mobile {
+            display: block;
+        }
+        &--desktop {
+            display: none;
+        }
     }
 
     &__description {
@@ -43,5 +54,40 @@
 
     &__action {
         width: 100%;
+    }
+
+    @media (min-width: 768px) {
+        //overflow: hidden;
+        aspect-ratio: 1440/655;
+
+        &__container {
+            width: 100%;
+            padding-top: 160px;
+        }
+
+        &__wrapper {
+            max-width: 483px;
+        }
+
+        &__background {
+            aspect-ratio: 1440/655;
+        }
+
+        &__description {
+            margin-bottom: 80px;
+        }
+
+        &__subtitle {
+            &--mobile {
+                display: none;
+            }
+            &--desktop {
+                display: block;
+            }
+        }
+
+        &__action {
+            max-width: 390px;
+        }
     }
 }

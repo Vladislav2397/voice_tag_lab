@@ -21,3 +21,5 @@ import './sections/reviews/reviews.scss'
 import './sections/faq/faq.scss'
 import './sections/have-questions-form/have-questions-form.scss'
 import './sections/footer/footer.scss'
+
+import './app.scss'

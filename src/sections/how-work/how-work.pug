@@ -1,18 +1,19 @@
 include ../../components/the-text/the-text.pug
 
 .how-work
-    .how-work__container.container
+    .how-work__container
         +theText('h2', 'h2').how-work__title How it works?
-        ul.how-work__wrapper.card
-            li.how-work__item
-                p.how-work__count 1
-                +theText('p', 'medium').how-work__description Listen to the audio samples and choose which voice(s) you want
-            li.how-work__item
-                p.how-work__count 2
-                +theText('p', 'medium').how-work__description Choose your package<br />in the "Prices" section<br />and click on the "Get your custom tag" button
-            li.how-work__item
-                p.how-work__count 3
-                +theText('p', 'medium').how-work__description Fill out the form. Include your tag phrase(s), any requests like mood, effects, etc.
+        .how-work__wrapper.card
+            ul.how-work__list
+                li.how-work__item
+                    p.how-work__count 1
+                    +theText('p', 'medium').how-work__description Listen to the audio samples and choose which voice(s) you want
+                li.how-work__item
+                    p.how-work__count 2
+                    +theText('p', 'medium').how-work__description Choose your package<br />in the "Prices" section<br />and click on the "Get your custom tag" button
+                li.how-work__item
+                    p.how-work__count 3
+                    +theText('p', 'medium').how-work__description Fill out the form. Include your tag phrase(s), any requests like mood, effects, etc.
             +theText('div', 'medium').how-work__attention
                 | Don’t’ worry about the pronunciation of your name.<br />We will contact you to clarify it.
                 .how-work__punctuation

@@ -1,12 +1,12 @@
-.app {
-    display: flex;
-    flex-direction: column;
-}
-
 body {
     font-family: sans-serif;
     background: #10141E;
     color: #ffffff;
+}
+
+.container {
+    width: 100%;
+    max-width: 1050px;
 }
 
 button {

@@ -4,16 +4,31 @@ include components/review/review.pug
 include components/logo/logo.pug
 include components/audio-track/audio-track.pug
 
+include sections/header/header.pug
+
 .app
-    include sections/header/header.pug
-    include sections/main/main.pug
-    include sections/how-work/how-work.pug
-    include sections/about-us/about-us.pug
-    include sections/samples/samples.pug
-    include sections/futures/futures.pug
-    include sections/offer/offer.pug
-    include sections/pricing/pricing.pug
-    include sections/reviews/reviews.pug
-    include sections/faq/faq.pug
-    include sections/have-questions-form/have-questions-form.pug
-    include sections/footer/footer.pug
+    .app__header
+        .container.app__container
+            +header.app__wide--n-20
+    .app__main
+        include sections/main/main.pug
+    .app__how-work.container
+        include sections/how-work/how-work.pug
+    .app__about.container
+        include sections/about-us/about-us.pug
+    .app__samples.container
+        include sections/samples/samples.pug
+    .app__futures.container
+        include sections/futures/futures.pug
+    .app__offer.container
+        include sections/offer/offer.pug
+    .app__pricing.container
+        include sections/pricing/pricing.pug
+    .app__reviews.container
+        include sections/reviews/reviews.pug
+    .app__faq.container
+        include sections/faq/faq.pug
+    .app__form.container
+        include sections/have-questions-form/have-questions-form.pug
+    .app__footer.container
+        include sections/footer/footer.pug

@@ -18,7 +18,6 @@
         display: flex;
         flex-direction: column;
         margin-bottom: 16px;
-        //align-items: center;
     }
 
     &__item {
@@ -42,7 +41,7 @@
         flex-shrink: 0;
         font-size: 90px;
         font-weight: bold;
-        background-image: linear-gradient(0deg, rgba(#fff, 0), rgba(#fff, 0), rgba(#fff, 0.7), rgba(#fff, 0.9), rgba(#fff, 1));
+        background-image: linear-gradient(0deg, rgba(#fff, 0), rgba(#fff, 0), rgba(#fff, 0.5), rgba(#fff, 0.7), rgba(#fff, 1));
 
         /* Use the text as a mask for the background. */
         /* This will show the gradient as a text color rather than element bg. */
@@ -81,11 +80,14 @@
         &__list {
             flex-direction: row;
             align-self: stretch;
+            justify-content: space-between;
         }
 
         &__item {
             flex-shrink: 1;
-            max-width: 300px;
+            flex-grow: 1;
+            flex-basis: 0;
+            max-width: 290px;
 
             & + & {
                 margin-left: 16px;

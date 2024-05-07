@@ -7,28 +7,36 @@ include components/audio-track/audio-track.pug
 include sections/header/header.pug
 
 .app
-    .app__header
+    .app__section
         .container.app__container
-            +header.app__wide--n-20
-    .app__main
+            +header.app__header
+    .app__section
         include sections/main/main.pug
-    .app__how-work.container
-        include sections/how-work/how-work.pug
-    .app__about.container
-        include sections/about-us/about-us.pug
-    .app__samples.container
-        include sections/samples/samples.pug
-    .app__futures.container
-        include sections/futures/futures.pug
-    .app__offer.container
-        include sections/offer/offer.pug
-    .app__pricing.container
-        include sections/pricing/pricing.pug
-    .app__reviews.container
-        include sections/reviews/reviews.pug
-    .app__faq.container
-        include sections/faq/faq.pug
-    .app__form.container
-        include sections/have-questions-form/have-questions-form.pug
-    .app__footer.container
+    .app__section
+        .app__container.app__how-work
+            include sections/how-work/how-work.pug
+    .app__section
+        .app__container
+            include sections/about-us/about-us.pug
+    .app__section
+        .app__container
+            include sections/samples/samples.pug
+    .app__section
+        .app__container
+            include sections/futures/futures.pug
+            include sections/offer/offer.pug
+    .app__section
+        .app__container
+            include sections/pricing/pricing.pug
+    .app__section
+        .app__container
+            include sections/reviews/reviews.pug
+
+    .app__section
+        .app__container
+            include sections/faq/faq.pug
+    .app__section
+        .app__container
+            include sections/have-questions-form/have-questions-form.pug
+    .app__section
         include sections/footer/footer.pug

@@ -10,6 +10,11 @@
         //padding-left: 20px;
         //padding-right: 20px;
         box-sizing: border-box;
+
+        &--center {
+            display: flex;
+            justify-content: center;
+        }
     }
 
     &__section {
@@ -56,6 +61,16 @@
         @media (min-width: 768px) {
             margin-left: auto;
             margin-right: auto;
+        }
+    }
+
+    &__future-offer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: 768px) {
+            flex-direction: row;
         }
     }
 }

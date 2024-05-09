@@ -7,9 +7,9 @@ include components/audio-track/audio-track.pug
 include sections/header/header.pug
 
 .app
-    .app__section
-        .container.app__container
-            +header.app__header
+    .app__header
+        .app__container
+            +header
     .app__section
         include sections/main/main.pug
     .app__section
@@ -22,11 +22,11 @@ include sections/header/header.pug
         .app__container
             include sections/samples/samples.pug
     .app__section
-        .app__container
+        .app__container.app__future-offer
             include sections/futures/futures.pug
             include sections/offer/offer.pug
     .app__section
-        .app__container
+        .app__container.app__container--center
             include sections/pricing/pricing.pug
     .app__section
         .app__container

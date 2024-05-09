@@ -1,3 +1,5 @@
+@import '../../functions.scss';
+
 $gradientPlay: linear-gradient(45deg, #0EF0A8 30%, #0958FA 90%);
 $gradientPause: linear-gradient(45deg, #0958FA 10%, #0EF0A8 70%);
 
@@ -6,18 +8,23 @@ $gradientPause: linear-gradient(45deg, #0958FA 10%, #0EF0A8 70%);
     align-items: center;
     justify-content: space-between;
     background-color: rgba(#fff, 0.12);
-    border-radius: 20px;
-    min-height: 52px;
-    padding: 6px 8px;
+    border-radius: rems(20);
+    min-height: rems(52);
+    padding: rems(6) rems(8);
     box-sizing: border-box;
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(rems(50));
 
     &__button {
-        width: 40px;
-        height: 40px;
+        width: rems(40);
+        height: rems(40);
         background: $gradientPlay;
         border-radius: 50%;
         flex-shrink: 0;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
     }
 
     &__pause {
@@ -49,55 +56,55 @@ $gradientPause: linear-gradient(45deg, #0958FA 10%, #0EF0A8 70%);
     &__bar {
         flex-grow: 1;
         align-items: center;
-        margin-left: 8px;
-        max-height: 30px;
+        margin-left: rems(8);
+        max-height: rems(30);
     }
 
     &__stick {
-        border-radius: 2px;
-        width: 2px;
-        min-height: 8px;
-        max-height: 30px;
+        border-radius: rems(2);
+        width: rems(2);
+        min-height: rems(8);
+        max-height: rems(30);
         background-color: #ccc;
 
         &--8 {
-            height: 8px;
+            height: rems(8);
         }
 
         &--10 {
-            height: 10px;
+            height: rems(10);
         }
 
         &--12 {
-            height: 12px;
+            height: rems(12);
         }
 
         &--16 {
-            height: 16px;
+            height: rems(16);
         }
 
         &--20 {
-            height: 20px;
+            height: rems(20);
         }
 
         &--24 {
-            height: 24px;
+            height: rems(24);
         }
 
         &--26 {
-            height: 26px;
+            height: rems(26);
         }
 
         &--28 {
-            height: 28px;
+            height: rems(28);
         }
 
         &--30 {
-            height: 30px;
+            height: rems(30);
         }
 
         & + & {
-            margin-left: 2px;
+            margin-left: rems(2);
         }
     }
 }

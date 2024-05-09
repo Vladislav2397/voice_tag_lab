@@ -1,23 +1,25 @@
+@import '../../functions.scss';
+
 .faq {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: rems(20);
+    padding-right: rems(20);
 
     &__header {
-        margin-bottom: 24px;
+        margin-bottom: rems(24);
     }
 
     &__item {
         & + & {
-            margin-top: 32px;
+            margin-top: rems(32);
         }
     }
 
     &__title {
-        margin-bottom: 8px;
+        margin-bottom: rems(8);
     }
 
     &__text {
-        font-size: 16px;
+        font-size: rems(16);
         color: rgba(#fff, 0.8);
     }
 }

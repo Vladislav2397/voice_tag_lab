@@ -1,0 +1,15 @@
+mixin instagramLink
+    .instagram-link&attributes(attributes)
+        .instagram-link__header
+            i.instagram-link__icon
+                img(
+                    src="public/assets/images/icons/instagram.svg"
+                )
+            +theText('p', 'medium').instagram-link__text more reviews on&nbsp;our&nbsp;instagram
+                br
+                +theText('u', 'medium').instagram-link__tag.instagram-link__tag--mobile @voicetaglab
+        .instagram-link__content
+            img.instagram-link__qr(
+                src="/public/assets/images/voice_tag_lab_qr.svg"
+            )
+            +theText('u', 'medium').instagram-link__tag.instagram-link__tag--desktop @voicetaglab

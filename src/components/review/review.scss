@@ -1,19 +1,21 @@
+@import '../../functions.scss';
+
 .review {
     background-color: #fff;
-    border-radius: 20px;
+    border-radius: rems(20);
     display: flex;
     align-items: center;
-    padding: 12px 42px;
+    padding: rems(12) rems(42);
 
     &__avatar + &__text,
     &__text + &__avatar {
-        margin-left: 12px;
+        margin-left: rems(12);
     }
 
     &__avatar {
         display: block;
-        width: 44px;
-        height: 44px;
+        width: rems(44);
+        height: rems(44);
         overflow: hidden;
         border-radius: 50%;
         background-color: #ccc;
@@ -21,7 +23,7 @@
     }
 
     &__text {
-        font-size: 14px;
+        font-size: rems(14);
         line-height: 120%;
         color: #000;
     }

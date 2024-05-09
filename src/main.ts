@@ -7,6 +7,7 @@ import './components/review/review.scss'
 import './components/the-text/the-text.scss'
 import './components/logo/logo.scss'
 import './components/audio-track/audio-track.scss'
+import './components/instagram-link/instagram-link.scss'
 
 // Sections
 import './sections/header/header.scss'

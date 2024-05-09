@@ -1,23 +1,29 @@
-.how-work {
-    margin-bottom: 34px;
+@import '../../functions.scss';
 
+.how-work {
     &__title {
-        margin-bottom: 24px;
+        margin-bottom: rems(24);
     }
 
     &__wrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 24px;
+        padding: rems(24);
         background: rgba(#fff, 0.04);
-        border-radius: 30px;
+        border-radius: rems(30);
     }
 
     &__list {
         display: flex;
         flex-direction: column;
-        margin-bottom: 16px;
+        margin-bottom: rems(16);
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+            align-self: stretch;
+            justify-content: space-between;
+        }
     }
 
     &__item {
@@ -26,7 +32,18 @@
 
         @media (max-width: 767px) {
             & + & {
-                margin-top: 16px;
+                margin-top: rems(16);
+            }
+        }
+
+        @media (min-width: 768px) {
+            flex-shrink: 1;
+            flex-grow: 1;
+            flex-basis: 0;
+            max-width: rems(290);
+
+            & + & {
+                margin-left: rems(16);
             }
         }
     }
@@ -35,11 +52,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 72px;
-        height: 118px;
-        margin-right: 8px;
+        width: rems(72);
+        height: rems(118);
+        margin-right: rems(8);
         flex-shrink: 0;
-        font-size: 90px;
+        font-size: rems(90);
         font-weight: bold;
         background-image: linear-gradient(0deg, rgba(#fff, 0), rgba(#fff, 0), rgba(#fff, 0.5), rgba(#fff, 0.7), rgba(#fff, 1));
 
@@ -53,12 +70,12 @@
 
     &__attention {
         position: relative;
-        padding: 16px 43px;
+        padding: rems(16) rems(43);
         background-color: rgba(#fff, 0.04);
-        border-radius: 20px;
-        font-size: 16px;
+        border-radius: rems(20);
+        font-size: rems(16);
         text-align: center;
-        max-width: 509px;
+        max-width: rems(509);
     }
 
     &__punctuation {
@@ -69,29 +86,10 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
-        font-size: 37px;
-        padding-left: 16px;
-        padding-right: 16px;
+        font-size: rems(37);
+        padding-left: rems(16);
+        padding-right: rems(16);
         box-sizing: border-box;
         font-weight: bold;
-    }
-
-    @media (min-width: 768px) {
-        &__list {
-            flex-direction: row;
-            align-self: stretch;
-            justify-content: space-between;
-        }
-
-        &__item {
-            flex-shrink: 1;
-            flex-grow: 1;
-            flex-basis: 0;
-            max-width: 290px;
-
-            & + & {
-                margin-left: 16px;
-            }
-        }
     }
 }

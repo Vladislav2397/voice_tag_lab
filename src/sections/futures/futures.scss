@@ -1,52 +1,65 @@
+@import '../../functions.scss';
+
 .futures {
     margin: 0 auto;
     box-sizing: border-box;
 
+    @media (min-width: 768px) {
+        max-width: 600px;
+    }
+
     &__container {
-        padding: 24px;
+        padding: rems(24);
         box-sizing: border-box;
         background: linear-gradient(7deg, rgba(#0958FA, 0.05) -30%, rgba(#09FA32, 0.05) 130%);
-        border-radius: 30px;
+        border-radius: rems(30);
     }
 
     &__header {
-        margin-bottom: 16px;
+        margin-bottom: rems(16);
         line-height: 140%;
-        font-size: 24px;
+        font-size: rems(24);
         font-weight: bold;
     }
 
     &__list {
-        margin-right: -16px;
-        margin-bottom: -16px;
+        margin-right: rems(-16);
+        margin-bottom: rems(-16);
     }
 
     &__item {
         position: relative;
-        padding-left: 14px;
-        margin-right: 16px;
-        margin-bottom: 16px;
+        padding-left: rems(14);
+        margin-right: rems(16);
+        margin-bottom: rems(16);
+        box-sizing: border-box;
 
         &::before {
             content: '';
             position: absolute;
-            top: 7px;
+            top: rems(7);
             left: 0;
-            width: 8px;
-            height: 8px;
+            width: rems(8);
+            height: rems(8);
             border-radius: 50%;
             background-color: #0958FA;
+        }
+
+        @media (min-width: 768px) {
+            display: inline-block;
+            width: calc(50% - #{rems(16)});
+            vertical-align: top;
         }
     }
 
     &__title {
-        font-size: 16px;
+        font-size: rems(16);
         font-weight: bold;
         line-height: 140%;
     }
 
     &__description {
-        font-size: 14px;
+        font-size: rems(14);
         line-height: 140%;
         color: rgba(#fff, 0.8);
         font-weight: lighter;

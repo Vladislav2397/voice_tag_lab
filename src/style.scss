@@ -1,17 +1,42 @@
+@import './functions.scss';
+
+$container-min-width: 320px;
+$main-background-color: #10141E;
+
 html {
-    font-size: 12px;
+    font-size: 2.5vw;
+
+    @media (min-width: 450px) {
+        font-size: 12px;
+    }
+
+    @media (min-width: 650px) {
+        font-size: 14px;
+    }
+
+    @media (min-width: 768px) {
+        font-size: 12px;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 1vw;
+    }
+
+    @media (min-width: 1800px) {
+        font-size: 18px;
+    }
 }
 
 body {
     font-family: sans-serif;
-    background: #10141E;
+    background: $main-background-color;
     color: #ffffff;
-    min-width: 320px;
+    min-width: $container-min-width;
 }
 
 .container {
     width: 100%;
-    max-width: 1050px;
+    max-width: rems(1050);
 }
 
 button {

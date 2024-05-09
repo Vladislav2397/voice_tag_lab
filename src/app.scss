@@ -1,3 +1,5 @@
+@import "./functions.scss";
+
 .app {
     position: relative;
     display: flex;
@@ -6,10 +8,14 @@
 
     &__container {
         margin: 0 auto;
-        max-width: 1050px;
-        //padding-left: 20px;
-        //padding-right: 20px;
+        max-width: rems(1050);
         box-sizing: border-box;
+
+        &--spacing {
+            @media (max-width: 767px) {
+                padding: 0 rems(20);
+            }
+        }
 
         &--center {
             display: flex;
@@ -19,6 +25,40 @@
 
     &__section {
         width: 100%;
+
+        &--m-24 {
+            margin-bottom: rems(24);
+        }
+
+        &--m-40 {
+            margin-bottom: rems(40);
+        }
+
+        &--m-60 {
+            margin-bottom: rems(60);
+        }
+
+        @media (min-width: 768px) {
+            &--l-20 {
+                margin-bottom: rems(20);
+            }
+
+            &--l-40 {
+                margin-bottom: rems(40);
+            }
+
+            &--l-75 {
+                margin-bottom: rems(75);
+            }
+
+            &--l-100 {
+                margin-bottom: rems(100);
+            }
+
+            &--l-130 {
+                margin-bottom: rems(130);
+            }
+        }
     }
 
     &__header {
@@ -26,57 +66,35 @@
         top: 0;
         left: 0;
         width: 100%;
-        min-height: 64px;
+        min-height: rems(64);
         z-index: 1;
     }
 
     &__wide {
         &--n-20 {
-            margin-left: -20px;
-            margin-right: -20px;
+            margin-left: rems(-20);
+            margin-right: rems(-20);
         }
         &--n-40 {
-            margin-left: -40px;
-            margin-right: -40px;
+            margin-left: rems(-40);
+            margin-right: rems(-40);
         }
     }
 
     &__header-container {
-        margin-left: -20px;
-        margin-right: -20px;
-    }
-
-    &__main {
-        width: 100%;
-        margin-bottom: 60px;
-
-        @media (min-width: 768px) {
-            margin-bottom: 76px;
-        }
-    }
-
-    &__about-us {
-        margin-bottom: 20px;
-
-        @media (min-width: 768px) {
-            margin-left: auto;
-            margin-right: auto;
-        }
+        margin-left: rems(-20);
+        margin-right: rems(-20);
     }
 
     &__future-offer {
         width: 100%;
         display: flex;
         flex-direction: column;
+        gap: rems(24);
 
         @media (min-width: 768px) {
             flex-direction: row;
+            gap: rems(30);
         }
-    }
-}
-
-.section {
-    &--container {
-        max-width: 1050px;
     }
 }

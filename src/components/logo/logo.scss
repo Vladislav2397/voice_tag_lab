@@ -1,7 +1,9 @@
+@import '../../functions.scss';
+
 .logo {
     display: block;
-    width: 68px;
-    height: 22px;
+    width: rems(68);
+    height: rems(22);
 
     img {
         width: 100%;

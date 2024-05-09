@@ -3,6 +3,7 @@ include components/button/button.pug
 include components/review/review.pug
 include components/logo/logo.pug
 include components/audio-track/audio-track.pug
+include components/instagram-link/instagram-link.pug
 
 include sections/header/header.pug
 
@@ -10,33 +11,32 @@ include sections/header/header.pug
     .app__header
         .app__container
             +header
-    .app__section
+    .app__section.app__section--m-60.app__section--l-75
         include sections/main/main.pug
-    .app__section
-        .app__container.app__how-work
+    .app__section.app__section--m-40.app__section--l-100
+        .app__container.app__container--spacing
             include sections/how-work/how-work.pug
-    .app__section
+    .app__section.app__section--m-40.app__section--l-20
         .app__container
             include sections/about-us/about-us.pug
-    .app__section
-        .app__container
+    .app__section.app__section--m-24.app__section--l-40
+        .app__container.app__container--spacing
             include sections/samples/samples.pug
-    .app__section
-        .app__container.app__future-offer
+    .app__section.app__section--m-24.app__section--l-130
+        .app__container.app__container--spacing.app__future-offer
             include sections/futures/futures.pug
             include sections/offer/offer.pug
-    .app__section
+    .app__section.app__section--m-40.app__section--l-100
         .app__container.app__container--center
             include sections/pricing/pricing.pug
-    .app__section
-        .app__container
+    .app__section.app__section--m-40.app__section--l-100
+        .app__container.app__container--spacing
             include sections/reviews/reviews.pug
-
-    .app__section
-        .app__container
+    .app__section.app__section--m-40.app__section--l-100
+        .app__container.app__container--spacing
             include sections/faq/faq.pug
-    .app__section
-        .app__container
+    .app__section.app__section--m-40.app__section--l-100
+        .app__container.app__container--spacing
             include sections/have-questions-form/have-questions-form.pug
     .app__section
         include sections/footer/footer.pug

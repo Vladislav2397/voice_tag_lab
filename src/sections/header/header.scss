@@ -1,13 +1,15 @@
+@import '../../functions.scss';
+
 .header {
     display: flex;
-    margin-top: 16px;
-    min-height: 64px;
+    margin-top: rems(16);
+    min-height: rems(64);
     align-items: center;
     justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: rems(20);
+    padding-right: rems(20);
     box-sizing: border-box;
-    border-radius: 30px;
+    border-radius: rems(30);
     background-color: rgba(#000000, 0.5);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(8px);
@@ -22,10 +24,10 @@
     }
 
     &__questions {
-        width: 32px;
-        height: 32px;
+        width: rems(32);
+        height: rems(32);
         border-radius: 50%;
-        margin-right: 16px;
+        margin-right: rems(16);
         border: none;
         background-color: rgba(#fff, 0.1);
         display: flex;
@@ -44,12 +46,12 @@
         justify-content: center;
         align-items: center;
         background: linear-gradient(26deg, #0958FA 0%, #09FA32 100%);
-        padding: 8px 12px;
-        border-radius: 30px;
+        padding: rems(8) rems(12);
+        border-radius: rems(30);
         position: relative;
         border: none;
         color: #ffffff;
-        font-size: 14px;
+        font-size: rems(14);
         line-height: 140%;
         font-weight: bold;
     }

@@ -1,0 +1,48 @@
+@import "../../functions.scss";
+
+.instagram-link {
+    display: flex;
+    flex-direction: column;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: rems(8);
+
+        @media (min-width: 1200px) {
+            max-width: rems(208);
+            margin-bottom: rems(24);
+            width: min-content;
+        }
+    }
+
+    &__text {
+        font-size: rems(18);
+    }
+
+    &__content {
+        display: none;
+
+        @media (min-width: 1200px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__qr {
+        display: block;
+        margin-bottom: rems(16);
+        width: rems(206);
+        height: rems(206);
+    }
+
+    &__tag {
+        @media (min-width: 1200px) {
+            &--mobile {
+                display: none;
+            }
+        }
+    }
+}

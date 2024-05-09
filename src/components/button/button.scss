@@ -1,8 +1,10 @@
+@import '../../functions.scss';
+
 .button {
     border: none;
-    line-height: 64px;
-    border-radius: 30px;
-    font-size: 18px;
+    line-height: rems(64);
+    border-radius: rems(30);
+    font-size: rems(18);
     color: #ffffff;
     font-weight: bold;
     cursor: pointer;
@@ -27,7 +29,7 @@
             left: 1px;
             right: 1px;
             bottom: 1px;
-            border-radius: 30px;
+            border-radius: rems(30);
             background-color: #000000;
         }
     }

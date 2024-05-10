@@ -1,6 +1,9 @@
 @import '../../functions.scss';
 
 .have-questions-form {
+    max-width: rems(511);
+    width: 100%;
+
     &__header {
         font-size: rems(24);
         font-weight: bold;

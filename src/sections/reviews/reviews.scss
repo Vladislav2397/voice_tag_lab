@@ -24,8 +24,8 @@
         transform: rotateZ(1deg);
     }
     &__list:nth-child(2) &__item:nth-child(2) {
-        margin-top: rems(6);
-        margin-bottom: rems(-2);
+        //margin-top: rems(6);
+        //margin-bottom: rems(-2);
     }
     &__list:nth-child(2) &__item:nth-child(3) {
         transform: rotateZ(1deg);
@@ -34,17 +34,26 @@
         transform: rotateZ(-1deg);
     }
 
+    &__list {
+        margin-right: rems(-16);
+        margin-bottom: rems(-16);
+    }
+
     &__item {
         box-sizing: border-box;
+        margin-right: rems(16);
+        margin-bottom: rems(16);
 
-        & + & {
-            margin-top: rems(8);
+        @media (max-width: 767px) {
+            & + & {
+                margin-top: rems(8);
+            }
         }
 
         @media (min-width: 768px) and (max-width: 1199px) {
             display: inline-block;
-            width: calc(50% - 1.333rem);
-            margin-right: 1.333rem;
+            width: calc(50% - #{rems(16)});
+            margin-right: rems(16);
             vertical-align: middle;
         }
     }

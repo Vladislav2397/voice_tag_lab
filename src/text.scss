@@ -1,0 +1,52 @@
+@import "./functions.scss";
+
+$primary: #0B96D9;
+$critical: #DF0E3A;
+
+.text {
+    a {
+        color: #1286FC;
+        font-weight: bold;
+    }
+
+    p {
+        margin-top: rems(8);
+        margin-bottom: rems(8);
+    }
+
+    b {
+        font-weight: bold;
+    }
+
+    u {
+        text-decoration: underline;
+    }
+
+    ul li {
+        position: relative;
+        padding-left: rems(16);
+
+        &.primary::before {
+            background-color: $primary;
+        }
+
+        &.critical::before {
+            background-color: $critical;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            width: rems(8);
+            height: rems(8);
+            border-radius: 50%;
+        }
+
+        & + li {
+            margin-top: rems(8);
+        }
+    }
+}

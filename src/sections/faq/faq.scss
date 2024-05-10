@@ -1,11 +1,13 @@
 @import '../../functions.scss';
 
 .faq {
-    padding-left: rems(20);
-    padding-right: rems(20);
-
     &__header {
         margin-bottom: rems(24);
+    }
+
+    &__list {
+        max-width: rems(871);
+        font-family: 'Montserrat', sans-serif;
     }
 
     &__item {
@@ -20,6 +22,7 @@
 
     &__text {
         font-size: rems(16);
+        line-height: 120%;
         color: rgba(#fff, 0.8);
     }
 }

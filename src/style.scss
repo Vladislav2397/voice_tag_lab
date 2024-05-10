@@ -6,7 +6,7 @@ $main-background-color: #10141E;
 html {
     font-size: 2.5vw;
 
-    @media (min-width: 450px) {
+    @media (min-width: 428px) {
         font-size: 12px;
     }
 
@@ -35,8 +35,21 @@ body {
 }
 
 .container {
-    width: 100%;
+    margin: 0 auto;
     max-width: rems(1050);
+    box-sizing: border-box;
+    width: 100%;
+
+    &--spacing {
+        @media (max-width: 767px) {
+            padding: 0 rems(20);
+        }
+    }
+
+    &--center {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 button {
@@ -69,10 +82,35 @@ button {
     font-weight: bold;
 }
 
-//@font-face {
-//    font-family: 'Montserrat';
-//    src:
-//        url('/public/assets/fonts/Russo_One/RussoOne-Regular.ttf') format('truetype'),
-//        url('/public/assets/fonts/Russo_One/RussoOne-Regular.woff') format('woff'),
-//        url('/public/assets/fonts/Russo_One/RussoOne-Regular.woff2') format('woff2');
-//}
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    src:
+        url('/public/assets/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype'),
+        url('/public/assets/fonts/Montserrat/Montserrat-Regular.woff') format('woff');
+        //url('/public/assets/fonts/Montserrat/Montserrat-Regular.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    src:
+        url('/public/assets/fonts/Montserrat/Montserrat-Medium.ttf') format('truetype'),
+        url('/public/assets/fonts/Montserrat/Montserrat-Medium.woff') format('woff');
+    //url('/public/assets/fonts/Montserrat/Montserrat-Regular.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    src:
+        url('/public/assets/fonts/Montserrat/Montserrat-Bold.ttf') format('truetype'),
+        url('/public/assets/fonts/Montserrat/Montserrat-Bold.woff') format('woff');
+    //url('/public/assets/fonts/Montserrat/Montserrat-Regular.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    src:
+        url('/public/assets/fonts/Montserrat/Montserrat-SemiBold.ttf') format('truetype'),
+        url('/public/assets/fonts/Montserrat/Montserrat-SemiBold.woff') format('woff');
+    //url('/public/assets/fonts/Montserrat/Montserrat-Regular.woff2') format('woff2');
+}

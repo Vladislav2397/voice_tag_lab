@@ -5,7 +5,6 @@
     flex-direction: column;
     padding: rems(40) rems(20) rems(56);
     background-color: rgba(#000, 0.5);
-    margin-top: rems(40);
 
     &__logo {
         margin-bottom: rems(32);
@@ -21,6 +20,8 @@
         display: inline-block;
         font-size: rems(16);
         line-height: 120%;
+        font-weight: 400;
+        font-family: 'Montserrat', sans-serif;
 
         &--nav {
             margin-right: rems(24);
@@ -28,11 +29,22 @@
         }
 
         &--privacy {
+            display: block;
             text-decoration-line: underline;
             opacity: 0.6;
 
-            & + & {
-                margin-top: rems(24);
+            @media (max-width: 649px) {
+                & + & {
+                    margin-top: rems(24);
+                }
+            }
+
+            @media (min-width: 650px) {
+                display: inline-block;
+
+                & + & {
+                    margin-left: rems(24);
+                }
             }
         }
 
@@ -47,14 +59,21 @@
             }
 
             & + & {
-                margin-left: rems(24);
+                margin-left: rems(12);
             }
         }
     }
 
     &__privacy {
-        display: flex;
-        flex-direction: column;
+        //display: flex;
+        //flex-direction: column;
+
+        @media (min-width: 650px) {
+
+        }
+    }
+
+    &__center {
         margin-bottom: rems(40);
     }
 
@@ -63,6 +82,26 @@
 
         & + & {
             margin-top: rems(24);
+        }
+    }
+
+    @media (min-width: 1200px) {
+        &__container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+
+        &__logo {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        &__social {
+            position: absolute;
+            top: 0;
+            right: 0;
         }
     }
 }

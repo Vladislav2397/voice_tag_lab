@@ -1,5 +1,6 @@
 import './reset.css'
 import './style.scss'
+import './text.scss'
 
 // Components
 import './components/button/button.scss'
